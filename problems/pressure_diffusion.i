@@ -21,7 +21,7 @@
 
 [Kernels]
   [diffusion]
-    type = ADDiffusion # Laplacian operator
+    type = DarcyPressure # Laplacian operator
     variable = pressure # operate on the "pressure" variable from above
   []
 []
@@ -51,6 +51,5 @@
 
 [Outputs]
   exodus = true
-  vtk    = true
 []
 
